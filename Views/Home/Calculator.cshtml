@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+<form>
+    <label for="hoursDesired">Hours Desired: $</label> <input id="hoursDesired" name="hoursDesired" type="number" min="0" max="100" />
+    <br />
+    <br />
+    <label for="hourlyRate">Hourly Rate: $</label> <input id="hourlyRate" name="hourlyRate" type="number" value="20.00" readonly />
+    <br />
+    <br />
+    <button id="btnCalculate" type="button">Calculate Total Cost</button>
+    <br />
+    <br />
+    <label>Total Cost: $</label> <input id="totalCost" name="totalCost" type="number" value="0.00" readonly />
+</form>
